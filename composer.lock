@@ -4,9 +4,72 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "25cdb0d12dd909d91aa95ffcc012f43e",
-    "content-hash": "0862513cce0b3271cd443a7d2fe8481e",
+    "hash": "4476c0d7b687f7e31b466d6c4a9eec7e",
+    "content-hash": "527e95a423ead3c68a5128ff539cc1f7",
     "packages": [
+        {
+            "name": "giggsey/libphonenumber-for-php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/giggsey/libphonenumber-for-php.git",
+                "reference": "252294eadb22635588ce83f2a8442bdfb9cb01b5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/252294eadb22635588ce83f2a8442bdfb9cb01b5",
+                "reference": "252294eadb22635588ce83f2a8442bdfb9cb01b5",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*"
+            },
+            "require-dev": {
+                "pear/pear-core-minimal": "^1.9",
+                "pear/pear_exception": "*",
+                "pear/versioncontrol_git": "dev-master",
+                "phing/phing": "~2.7",
+                "phpunit/phpunit": "~4.0",
+                "satooshi/php-coveralls": "~0.6",
+                "symfony/console": "~2.4"
+            },
+            "suggest": {
+                "ext-intl": "To use the geocoder and carrier mapping"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "7.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "libphonenumber": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Joshua Gigg",
+                    "email": "giggsey@gmail.com",
+                    "homepage": "http://giggsey.com/"
+                }
+            ],
+            "description": "PHP Port of Google's libphonenumber",
+            "homepage": "https://github.com/giggsey/libphonenumber-for-php",
+            "keywords": [
+                "geocoding",
+                "geolocation",
+                "libphonenumber",
+                "mobile",
+                "phonenumber",
+                "validation"
+            ],
+            "time": "2015-09-16 14:33:08"
+        },
         {
             "name": "malenki/codevro",
             "version": "dev-master",
@@ -70,7 +133,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Respect/Validation/zipball/937fa6b1836ffce9e614deb0f69edb3bb1d1bbeb",
+                "url": "https://api.github.com/repos/Respect/Validation/zipball/f9f2325f29867a007417a7d5f2deb0ea7e70f599",
                 "reference": "937fa6b1836ffce9e614deb0f69edb3bb1d1bbeb",
                 "shasum": ""
             },
@@ -123,6 +186,86 @@
                 "validator"
             ],
             "time": "2015-10-07 13:18:31"
+        },
+        {
+            "name": "ronanguilloux/isocodes",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ronanguilloux/IsoCodes.git",
+                "reference": "c027b47e2738bdb68308b2963f5d850b5e94dfd0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ronanguilloux/IsoCodes/zipball/c027b47e2738bdb68308b2963f5d850b5e94dfd0",
+                "reference": "c027b47e2738bdb68308b2963f5d850b5e94dfd0",
+                "shasum": ""
+            },
+            "require": {
+                "ext-bcmath": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "fabpot/php-cs-fixer": "~1.9",
+                "pdepend/pdepend": "~2.1",
+                "phploc/phploc": "*",
+                "phpmd/phpmd": "@stable",
+                "phpunit/phpunit": "~4.7",
+                "satooshi/php-coveralls": "v0.6.1",
+                "sebastian/phpcpd": "*",
+                "squizlabs/php_codesniffer": "~2.3"
+            },
+            "suggest": {
+                "gourmet/validation": "For CakePHP 3 integration",
+                "sllh/iso-codes-validator": "For Symfony or Silex integration with ease"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "IsoCodes": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Ronan Guilloux",
+                    "email": "ronan.guilloux@gmail.com",
+                    "homepage": "http://github.com/ronanguilloux",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP library, validating various ISO codes, such as IBAN, SWIFT/BIC, BBAN, RIB, Credit Card number, INSEE, VAT, NSS, Siren, Siret, Ssn, NINO, Zipcode (US, Canada, France...), ISBN & EAN13, Spanish CIF & NIF",
+            "homepage": "https://github.com/ronanguilloux/IsoCodes",
+            "keywords": [
+                "BBAN",
+                "BIC",
+                "CIF",
+                "Credit Card number",
+                "EAN13",
+                "IBAN",
+                "INSEE",
+                "ISBN",
+                "ISO codes",
+                "NIF",
+                "NINO",
+                "NSS",
+                "RIB",
+                "Siren",
+                "Siret",
+                "Ssn",
+                "swift",
+                "vat",
+                "zipcode"
+            ],
+            "time": "2015-07-19 07:57:39"
         },
         {
             "name": "symfony/translation",
@@ -442,7 +585,9 @@
     "stability-flags": {
         "respect/validation": 20,
         "malenki/codevro": 20,
-        "zendframework/zend-validator": 20
+        "zendframework/zend-validator": 20,
+        "ronanguilloux/isocodes": 20,
+        "giggsey/libphonenumber-for-php": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

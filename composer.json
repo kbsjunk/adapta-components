@@ -11,7 +11,9 @@
         "respect/validation": "dev-master",
         "malenki/codevro": "dev-master",
         "zendframework/zend-validator": "dev-master",
-        "symfony/validator": "~2.8"
+        "symfony/validator": "~2.8",
+        "ronanguilloux/isocodes": "^1.2@dev",
+        "giggsey/libphonenumber-for-php": "^7.0@dev"
     },
     "autoload": {
         "classmap": [
