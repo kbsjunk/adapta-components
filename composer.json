@@ -1,0 +1,24 @@
+{
+    "name": "adapta/components",
+    "description": "Components for Adapta",
+    "authors": [
+        {
+            "name": "Kit BS",
+            "email": "kit@kitbs.com"
+        }
+    ],
+    "require": {
+        "respect/validation": "dev-master",
+        "malenki/codevro": "dev-master",
+        "zendframework/zend-validator": "dev-master",
+        "symfony/validator": "~2.8"
+    },
+    "autoload": {
+        "classmap": [
+        ],
+        "psr-0": {
+            "Adapta\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
