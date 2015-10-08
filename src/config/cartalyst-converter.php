@@ -326,9 +326,19 @@ return array(
                 'unit'   => 3.28084,
             ),
 
+            'yd' => array(
+                'format' => '1,0.00 yd.',
+                'unit'   => 1.0936132983377077865266841644794,
+            ),
+
             'in' => array(
                 'format' => '1,0.00 in.',
                 'unit'   => 39.3701,
+            ),
+
+            'nmi' => array(
+                'format' => '1,0.00 nmi',
+                'unit'   => 0.0005399580345572354211663066954644
             ),
 
         ),
@@ -357,14 +367,104 @@ return array(
             'mg' => array(
                 'format' => '1,0.00 mg',
                 'unit'   => 1000000.00,
-            ),
+			),
 
+			't' => array(
+				'format' => '1,00.00 t',
+				'unit' => 0.001,
+			),
+			
+			'ton' => array(
+				'short' => array(
+					'format' => '1,00.00 short ton',
+					'unit' => 1 / 907.185,
+				),
+
+				'long' => array(
+					'format' => '1,00.00 long ton',
+					'unit' => 1 / 1016.05,
+				),
+			),
+			
 			'lb' => array(
 				'format' => '1,0.00 lb',
 				'unit'   => 2.20462,
 			),
+			
+			'oz' => array(
+				'format' => '1,00.00 oz',
+				'unit' => 35.273961949580411,
+			),
 
         ),
+
+        /*
+        |--------------------------------------------------------------------------
+        | Time
+        |--------------------------------------------------------------------------
+        |
+        | The available measurements to convert and format times.
+        |
+        */
+
+		'time' => array(
+
+			'ns' => array(
+				'format' => '1,00 ns',
+				'unit' => 0.000001,
+			),
+			
+			'mis' => array(
+				'format' => '1,00 μs',
+				'unit' => 0.000001,
+			),
+			
+			'ms' => array(
+				'format' => '1,00 ms',
+				'unit' => 0.001,
+			),
+			
+			's' => array(
+				'format' => '1,00 s',
+				'unit' => 1,
+			),
+			
+			'm' => array(
+				'format' => '1,00 min',
+				'unit' => 1 / 60,
+			),
+			
+			'h' => array(
+				'format' => '1,00 h',
+				'unit' => 1 / 3600,
+			),
+			
+			'd' => array(
+				'format' => '1,00 d',
+				'unit' => 1 / 86400,
+			),
+			
+			'w' => array(
+				'format' => '1,00 week',
+				'unit' => 1 / 604800,
+			),
+			
+			'mth' => array(
+				'format' => '1,00 month', // 30 days
+				'unit' => 1 / 2592000,
+			),
+			
+			'q' => array(
+				'format' => '1,00 quarter',
+				'unit' => 1 / 7776000,
+			),
+			
+			'y' => array(
+				'format' => '1,00 y',
+				'unit' => 1 / 31557600,
+			),
+
+		),
 
         /*
         |--------------------------------------------------------------------------
@@ -391,37 +491,18 @@ return array(
                 'format' => '1,0.00 ml',
                 'unit'   => 1000.00,
             ),
+			
+			'cm3' => array(
+				'format' => '1,00.00 cm³',
+				'unit' => 10,
+			),
+			
+			'm3' => array(
+				'format' => '1,00.00 m³',
+				'unit' => 0.001,
+			),
 
         ),
-
-        /*
-        |--------------------------------------------------------------------------
-        | Temperature
-        |--------------------------------------------------------------------------
-        |
-        | The available measurements to convert and format temperatures.
-        |
-        */
-		
-		'temperature' => array(
-
-			'c' => array(
-				'format' => '1,0.00 &deg;C',
-				'unit'   => 1.00,
-				'calculation' => [
-					'f' => '(@-32)/1.8',
-				],
-			),
-
-			'f' => array(
-				'format' => '1,0.00 &deg;F', //°
-				'unit'   => 1.00,
-				'calculation' => [
-					'c' => '(@*1.8)+32',
-				],
-			),
-
-    	),
 
     ),
 
