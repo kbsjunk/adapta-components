@@ -13,7 +13,9 @@
         "zendframework/zend-validator": "dev-master",
         "symfony/validator": "~2.8",
         "ronanguilloux/isocodes": "^1.2@dev",
-        "giggsey/libphonenumber-for-php": "^7.0@dev"
+        "giggsey/libphonenumber-for-php": "^7.0@dev",
+        "cartalyst/converter": "^2.0@dev",
+        "ayeo/temperature": "^0.1.1@dev"
     },
     "autoload": {
         "classmap": [
