@@ -6,10 +6,10 @@ class MedicareProviderException extends ValidationException
 {
     public static $defaultTemplates = array(
         self::MODE_DEFAULT => array(
-            self::STANDARD => '{{name}} must be a Medicare Provider number',
+            self::STANDARD => '{{input}} must be a Medicare Provider number',
         ),
         self::MODE_NEGATIVE => array(
-            self::STANDARD => '{{name}} must not be a Medicare Provider number',
+            self::STANDARD => '{{input}} must not be a Medicare Provider number',
         )
     );
 }

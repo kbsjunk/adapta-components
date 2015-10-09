@@ -1,25 +1,23 @@
 <?php namespace Adapta\Components\Formatters;
 
-use Cartalyst\Converter\Converter;
-use Cartalyst\Converter\Exchangers\NativeExchanger;
+use Adapta\Components\ThirdParty\Cartalyst\CartalystConverterFactory;
+use Adapta\Components\ThirdParty\Cartalyst\CartalystConverterTrait;
 
 abstract class AbstractCartalystFormatter implements FormatterInterface
 {
-	protected $converter;
-	protected $name;
-	protected $format;
+	use CartalystConverterTrait;
+	
+	protected $factory;
 
 	public function __construct($format)
 	{
-		$this->name = strtolower(str_replace(['Adapta\\Components\\Formatters\\','Formatter'], '', get_class($this)));
-		$this->format = $format;
-		$config = require dirname(__FILE__).'/../../../config/cartalyst-converter.php';
-		$this->converter = new Converter(new NativeExchanger);
-		$this->converter->setMeasurements($config['measurements']);
+		$name = strtolower(str_replace(['Adapta\\Components\\Formatters\\','Formatter'], '', get_class($this)));
+		$this->factory = new CartalystConverterFactory($name, compact('format'));
 	}
 	
 	public function format($input)
 	{
-		return $this->converter->to($this->name.'.'.$this->format)->value($input)->format();
+		return $this->getConverter()->to($this->getFactory()->getName().'.'.$this->getFactory()->getOption('format'))->value($input)->format();
 	}
+	
 }

@@ -2,14 +2,14 @@
 
 use Respect\Validation\Exceptions\ValidationException;
 
-class MedicareException extends ValidationException
+class UsNpiException extends ValidationException
 {
     public static $defaultTemplates = array(
         self::MODE_DEFAULT => array(
-            self::STANDARD => '{{input}} must be a Medicare number',
+            self::STANDARD => '{{input}} must be an NPI',
         ),
         self::MODE_NEGATIVE => array(
-            self::STANDARD => '{{input}} must not be a Medicare number',
+            self::STANDARD => '{{input}} must not be an NPI',
         )
     );
 }

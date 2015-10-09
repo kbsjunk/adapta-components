@@ -6,10 +6,10 @@ class IsoCodesException extends ValidationException
 {
     public static $defaultTemplates = array(
         self::MODE_DEFAULT => array(
-            self::STANDARD => '{{name}} must be a {{code}}',
+            self::STANDARD => '{{input}} must be a {{code}}',
         ),
         self::MODE_NEGATIVE => array(
-            self::STANDARD => '{{name}} must not be a {{code}}',
+            self::STANDARD => '{{input}} must not be a {{code}}',
         )
     );
 }

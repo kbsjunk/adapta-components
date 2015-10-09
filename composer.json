@@ -15,7 +15,10 @@
         "ronanguilloux/isocodes": "^1.2@dev",
         "giggsey/libphonenumber-for-php": "^7.0@dev",
         "cartalyst/converter": "^2.0@dev",
-        "ayeo/temperature": "^0.1.1@dev"
+        "ayeo/temperature": "^0.1.1@dev",
+		"nesbot/carbon": "~1.20",
+        "tecnickcom/tcpdf": "dev-master",
+        "primal/color": "^1.0@dev"
     },
     "autoload": {
         "classmap": [

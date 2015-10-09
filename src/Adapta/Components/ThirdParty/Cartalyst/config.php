@@ -400,14 +400,14 @@ return array(
 
         /*
         |--------------------------------------------------------------------------
-        | Time
+        | Time Duration
         |--------------------------------------------------------------------------
         |
-        | The available measurements to convert and format times.
+        | The available measurements to convert and format time durations.
         |
         */
 
-		'time' => array(
+		'duration' => array(
 
 			'ns' => array(
 				'format' => '1,00 ns',

@@ -2,7 +2,7 @@
 
 use Respect\Validation\Rules\AbstractRule;
 
-class Medicare extends AbstractRule
+class AuMedicare extends AbstractRule
 {
 	// http://www.clearwater.com.au/code/medicare
 	public function validate($input)

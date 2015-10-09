@@ -6,10 +6,10 @@ class TfnException extends ValidationException
 {
     public static $defaultTemplates = array(
         self::MODE_DEFAULT => array(
-            self::STANDARD => '{{name}} must be an TFN',
+            self::STANDARD => '{{input}} must be an TFN',
         ),
         self::MODE_NEGATIVE => array(
-            self::STANDARD => '{{name}} must not be an TFN',
+            self::STANDARD => '{{input}} must not be an TFN',
         )
     );
 }

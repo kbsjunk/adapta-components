@@ -6,10 +6,10 @@ class AbnException extends ValidationException
 {
     public static $defaultTemplates = array(
         self::MODE_DEFAULT => array(
-            self::STANDARD => '{{name}} must be an ABN',
+            self::STANDARD => '{{input}} must be an ABN',
         ),
         self::MODE_NEGATIVE => array(
-            self::STANDARD => '{{name}} must not be an ABN',
+            self::STANDARD => '{{input}} must not be an ABN',
         )
     );
 }
